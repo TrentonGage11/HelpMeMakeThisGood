@@ -16,18 +16,18 @@
 </head>
 <body>
 <div class="RightAlign">
-<input type="button" name="Change From Dark / Light" value="Dark Mode" id="colorToggle" onclick="colorchange('colorToggle', 'html', 'a', 'a2');" style="text-align: right;  background: rgb(255,255,255);  color: rgb(0,0,0);  font-size: 16px;  padding: 10px 20px;  border-radius: 10px;  border: 0px;  text-align: center;"/>
+<input type="button" name="Change From Dark / Light" value="Dark Mode" id="colorToggle" onclick="colorchange('colorToggle', 'html');" style="text-align: right;  background: rgb(255,255,255);  color: rgb(0,0,0);  font-size: 16px;  padding: 10px 20px;  border-radius: 10px;  border: 0px;  text-align: center;"/>
 </div>
 
 <div class='CenterAlign'>
-	<p>To help me make this site good, head on over to <a id='a' style="color: rgb(34,34,34);" href='https://github.com/TrentonGage11/HelpMeMakeThisGood/'>This Link</a>!</p>
+	<p>To help me make this site good, head on over to <a id='a' style="color: rgb(150, 150, 150);" href='https://github.com/TrentonGage11/HelpMeMakeThisGood/'>This Link</a>!</p>
 	<p>My Discord: TrentonGage11#0594</p>
-	<p>Link To Discord <a id='a2' style="color: rgb(34,34,34);" href='https://discordapp.com/channels/@me'>Here</a>!</p>
+	<p>Link To Discord <a id='a2' style="color: rgb(150, 150, 150);" href='https://discordapp.com/channels/@me'>Here</a>!</p>
 </div>
 
 <!-- Can add things to this, add another 'id' to the function and make the button do what you wan, or make a new button entirely -->
 <script>
-function colorchange(id0, id1, id2, id3) {
+function colorchange(id0, id1) {
   var background = document.getElementById(id0).style.backgroundColor;
   if(background == "rgb(255, 255, 255)") {
 	document.getElementById(id0).style.backgroundColor = "rgb(0,0,0)";
@@ -35,14 +35,6 @@ function colorchange(id0, id1, id2, id3) {
 	document.getElementById(id0).value = 'Light Mode'
 	document.getElementById(id1).style.backgroundColor = "rgb(34,34,34)";
 	document.getElementById(id1).style.color = "rgb(238,238,238)";
-	document.getElementById(id2).style.color = "rgb(238,238,238)";
-	document.getElementById(id2).active.style.color = "rgb(238,238,238)";
-	document.getElementById(id2).link.style.color = "rgb(238,238,238)";
-	document.getElementById(id2).visited.style.color = "rgb(238,238,238)";
-	document.getElementById(id3).style.color = "rgb(238,238,238)";
-	document.getElementById(id3).active.style.color = "rgb(238,238,238)";
-	document.getElementById(id3).link.style.color = "rgb(238,238,238)";
-	document.getElementById(id3).visited.style.color = "rgb(238,238,238)";
   }
   if(background == "rgb(0, 0, 0)") {
     document.getElementById(id0).style.backgroundColor = "rgb(255,255,255)";
@@ -50,14 +42,6 @@ function colorchange(id0, id1, id2, id3) {
 	document.getElementById(id0).value = 'Dark Mode'
 	document.getElementById(id1).style.backgroundColor = "rgb(208,208,208)";
 	document.getElementById(id1).style.color = "rgb(34,34,34)";
-	document.getElementById(id2).style.color = "rgb(34,34,34)";
-	document.getElementById(id2).active.style.color = "rgb(34,34,34)";
-	document.getElementById(id2).link.style.color = "rgb(34,34,34)";
-	document.getElementById(id2).visited.style.color = "rgb(34,34,34)";
-	document.getElementById(id3).style.color = "rgb(34,34,34)";
-	document.getElementById(id3).active.style.color = "rgb(34,34,34)";
-	document.getElementById(id3).link.style.color = "rgb(34,34,34)";
-	document.getElementById(id3).visited.style.color = "rgb(34,34,34)";
   }
 }
 </script>
