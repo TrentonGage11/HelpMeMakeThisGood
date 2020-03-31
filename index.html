@@ -16,7 +16,7 @@
 </head>
 <body>
 <div class="RightAlign">
-<input type="button" name="Change From Dark / Light" value="Dark Mode" id="colorToggle" onclick="colorchange('colorToggle', 'html', 'a', 'a:hover', 'a:active', 'a:visited', 'a:link');" style="text-align: right;  background: rgb(255,255,255);  color: rgb(0,0,0);  font-size: 16px;  padding: 10px 20px;  border-radius: 10px;  border: 0px;  text-align: center;"/>
+<input type="button" name="Change From Dark / Light" value="Dark Mode" id="colorToggle" onclick="colorchange('colorToggle', 'html', 'a');" style="text-align: right;  background: rgb(255,255,255);  color: rgb(0,0,0);  font-size: 16px;  padding: 10px 20px;  border-radius: 10px;  border: 0px;  text-align: center;"/>
 </div>
 
 <div class='CenterAlign'>
@@ -27,7 +27,7 @@
 
 <!-- Can add things to this, add another 'id' to the function and make the button do what you wan, or make a new button entirely -->
 <script>
-function colorchange(id0, id1, id2, id3, id4, id5, id6) {
+function colorchange(id0, id1, id2) {
   var background = document.getElementById(id0).style.backgroundColor;
   if(background == "rgb(255, 255, 255)") {
 	document.getElementById(id0).style.backgroundColor = "rgb(0,0,0)";
@@ -36,10 +36,10 @@ function colorchange(id0, id1, id2, id3, id4, id5, id6) {
 	document.getElementById(id1).style.backgroundColor = "rgb(34,34,34)";
 	document.getElementById(id1).style.color = "rgb(238,238,238)";
 	document.getElementById(id2).style.color = "rgb(238,238,238)";
-	document.getElementById(id3).style.color = "rgb(238,238,238)";
-	document.getElementById(id4).style.color = "rgb(238,238,238)";
-	document.getElementById(id5).style.color = "rgb(238,238,238)";
-	document.getElementById(id6).style.color = "rgb(238,238,238)";
+	document.getElementById(id2).hover.style.color = "rgb(238,238,238)";
+	document.getElementById(id2).active.style.color = "rgb(238,238,238)";
+	document.getElementById(id2).link.style.color = "rgb(238,238,238)";
+	document.getElementById(id2).visited.style.color = "rgb(238,238,238)";
   }
   if(background == "rgb(0, 0, 0)") {
     document.getElementById(id0).style.backgroundColor = "rgb(255,255,255)";
@@ -48,10 +48,10 @@ function colorchange(id0, id1, id2, id3, id4, id5, id6) {
 	document.getElementById(id1).style.backgroundColor = "rgb(208,208,208)";
 	document.getElementById(id1).style.color = "rgb(34,34,34)";
 	document.getElementById(id2).style.color = "rgb(34,34,34)";
-	document.getElementById(id3).style.color = "rgb(34,34,34)";
-	document.getElementById(id4).style.color = "rgb(34,34,34)";
-	document.getElementById(id5).style.color = "rgb(34,34,34)";
-	document.getElementById(id6).style.color = "rgb(34,34,34)";
+	document.getElementById(id2).hover.style.color = "rgb(34,34,34)";
+	document.getElementById(id2).active.style.color = "rgb(34,34,34)";
+	document.getElementById(id2).link.style.color = "rgb(34,34,34)";
+	document.getElementById(id2).visited.style.color = "rgb(34,34,34)";
   }
 }
 </script>
